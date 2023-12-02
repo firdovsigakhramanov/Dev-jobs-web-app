@@ -1,0 +1,17 @@
+:root {
+  --header-background-color: #5964e0;
+  --white: #fff;
+  --filter-bar-border: rgba(110, 127, 151, 0.2);
+  --background-color: #f4f6f8;
+  --very-dark-blue: #19202d;
+  --dark-grey: #6e8098;
+  --light-violet: #939bf4;
+  --secondary-btn-background: rgba(87, 98, 224, 0.1);
+  --secondary-btn-hover: rgba(87, 98, 224, 0.3512);
+  --text-white: #fff;
+  /*dark colors*/
+  --bg-dark-color: #19202d;
+  --bg-dark-text-color: #9daec2;
+  --bg-dark-main-color: #121721;
+  --border-color: #6e8098;
+}
