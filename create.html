@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/create.css" />
     <link rel="stylesheet" href="./assets/css/color.css" />
   </head>
   <body>
@@ -56,7 +56,7 @@
         />
       </svg>
 
-      <div class="top-bar container">
+      <div class="top-bar">
         <a href="./index.html" class="logo">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -89,52 +89,161 @@
           </div>
         </div>
       </div>
-      <div class="filter-bar container">
-        <div class="search-bar">
-          <div class="search-icon__for-desktop">
-            <img src="./assets/img/003-search 2.svg" alt="" />
-          </div>
-
-          <input
-            type="search"
-            placeholder="Filter by title, companies, expertise…"
-          />
-          <div class="filter-icons__for-mobile">
-            <div><img src="./assets/img/Mobile-Filter-img.svg" alt="" /></div>
-            <div>
-              <img src="./assets/img/Group 5 Copy 2.svg" alt="" />
-            </div>
-          </div>
-        </div>
-
-        <div class="filter-location">
-          <div>
-            <img src="./assets/img/placeholder 2.svg" alt="" />
-          </div>
-          <input
-            type="search"
-            placeholder="Filter by location…"
-            name=""
-            id=""
-          />
-        </div>
-        <div class="filter-time">
-          <div>
-            <input type="checkbox" />
-            <p class="filter-text__for-desktop">Full Time Only</p>
-            <p class="filter-text__for-mobile">Full Time</p>
-          </div>
-          <div class="btn-primary btn-search">Search</div>
-        </div>
+      <div class="create-page-name container">
+        <p>Added New Jobs</p>
       </div>
     </header>
     <main>
-      <div class="card-container container"></div>
-      <div class="container">
-        <a href="./create.html" class="btn-primary btn-load-more">Add Job</a>
+      <div class="create-page-container container">
+        <form class="create-form" action="">
+          <div class="first-page">
+            <div class="job-id">
+              <label for=""><p>Job Id:</p></label>
+              <label for="">
+                <input id="job-id" type="text" placeholder="Job Id" />
+              </label>
+            </div>
+            <div class="job-title">
+              <label for=""><p>Job Title:</p></label>
+              <label for="">
+                <input id="job-title" type="text" placeholder="Job Title" />
+              </label>
+            </div>
+            <div class="job-img">
+              <label for=""><p>Job Img:</p></label>
+              <label for="">
+                <input id="job-img" type="text" placeholder="Job Img" />
+              </label>
+            </div>
+            <div class="job-work-type">
+              <label for=""><p>Work-Type:</p></label>
+              <label for="">
+                <select id="job-work-type" name="" id="">
+                  <option>Part Time</option>
+                  <option>Full Time</option>
+                </select>
+              </label>
+            </div>
+            <div class="job-company">
+              <label for=""><p>Job Company:</p></label>
+              <label for="">
+                <input id="job-company" type="text" placeholder="Job Company" />
+              </label>
+            </div>
+            <div class="job-location">
+              <label for=""><p>Job Location:</p></label>
+              <label for="">
+                <input
+                  id="job-location"
+                  type="text"
+                  placeholder="Job Location"
+                />
+              </label>
+            </div>
+            <div class="form-btns">
+              <a href="./index.html" class="btn-primary">Cancel</a>
+              <a class="next-btn btn-secondary">Next Page</a>
+            </div>
+          </div>
+          <div class="second-page hide">
+            <div class="job-website">
+              <label for=""><p>Job Website:</p></label>
+              <label for="">
+                <input id="job-website" type="text" placeholder="Job Website" />
+              </label>
+            </div>
+            <div class="job-info">
+              <label for=""><p>Job Info:</p></label>
+              <label for="">
+                <input id="job-info" type="text" placeholder="Job Info" />
+              </label>
+            </div>
+            <div class="job-requarement">
+              <label for=""><p>Job Requarement:</p></label>
+              <label for="">
+                <textarea
+                  id="job-requarement"
+                  type="text"
+                  placeholder="Job Requarement"
+                ></textarea>
+              </label>
+            </div>
+            <div class="what-you-will-do">
+              <label for=""><p>What You Will Do:</p></label>
+              <label for="">
+                <textarea
+                  id="what-you-will-do"
+                  type="text"
+                  placeholder="What You Will Do"
+                ></textarea>
+              </label>
+            </div>
+            <div class="form-btns">
+              <a class="prev-btn btn-primary">Prev Page</a>
+              <button type="submit" class="btn-secondary">Add Job</button>
+            </div>
+          </div>
+        </form>
       </div>
     </main>
 
     <script src="./assets/script/main.js"></script>
   </body>
 </html>
+<!-- {
+  id: 1,
+  title: "Senior Software Engineer",
+  img: "assets/img/Group 3.png",
+  time: "5h ago .",
+  workType: "Part Time",
+  company: "Scoot",
+  loaction: "Canada",
+  innerData: {
+    jobLogo: "./assets/img/Group 19.png",
+    jobUrl: "scoot.com",
+    jobInfo:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.",
+    requertmen: {
+      info: "Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.   ",
+      list: [
+        {
+          id: 1,
+          text: "Morbi interdum mollis sapien. Sed",
+        },
+        {
+          id: 2,
+          text: "Morbi interdum mollis sapien. Sed",
+        },
+        {
+          id: 3,
+          text: "Morbi interdum mollis sapien. Sed",
+        },
+        {
+          id: 4,
+          text: "Morbi interdum mollis sapien. Sed",
+        },
+      ],
+    },
+    whatYouWillDo: {
+      info: "Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.   ",
+      list: [
+        {
+          id: 1,
+          text: "Morbi interdum mollis sapien. Sed",
+        },
+        {
+          id: 2,
+          text: "Morbi interdum mollis sapien. Sed",
+        },
+        {
+          id: 3,
+          text: "Morbi interdum mollis sapien. Sed",
+        },
+        {
+          id: 4,
+          text: "Morbi interdum mollis sapien. Sed",
+        },
+      ],
+    },
+  },
+} -->
