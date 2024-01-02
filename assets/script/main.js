@@ -89,7 +89,7 @@ if (page.pageName === "index.html") {
     // }
     let deleteData = data.filter((item) => item.id != id);
     getData(deleteData);
-    localStorage.setItem("data", JSON.stringify(newData));
+    localStorage.setItem("data", JSON.stringify(deleteData));
   }
 }
 
