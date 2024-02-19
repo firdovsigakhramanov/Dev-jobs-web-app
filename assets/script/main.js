@@ -87,6 +87,7 @@ if (page.pageName === "index.html") {
     //   localStorage.setItem("data", JSON.stringify(beforeData));
     //   getData(data);
     // }
+    data = JSON.parse(localStorage.getItem("data")) || [];
     let deleteData = data.filter((item) => item.id != id);
     getData(deleteData);
     localStorage.setItem("data", JSON.stringify(deleteData));
