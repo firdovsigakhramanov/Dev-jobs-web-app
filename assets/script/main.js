@@ -79,18 +79,10 @@ if (page.pageName === "index.html") {
   getData(data);
 
   function deleteCard(id) {
-    // let jobIndex = data.findIndex((item) => item.id == id);
-    // if (jobIndex !== -1) {
-    //   beforeData = [...data];
-    //   beforeData.splice(jobIndex, 1);
-
-    //   localStorage.setItem("data", JSON.stringify(beforeData));
-    //   getData(data);
-    // }
-    data = JSON.parse(localStorage.getItem("data")) || [];
-    let deleteData = data.filter((item) => item.id != id);
-    getData(deleteData);
-    localStorage.setItem("data", JSON.stringify(deleteData));
+    let x = data.findIndex((item) => item?.id == id);
+    data.splice(x, 1);
+    localStorage.setItem("data", JSON.stringify(data));
+    getData(data);
   }
 }
 
@@ -313,23 +305,4 @@ function generateInnerPage(findById) {
   `;
 }
 
-// searchBar.addEventListener("keyup", function (e) {
-//   result = search(e.target.value, "title", data);
-//   getData(result);
-//   console.log(result);
-// });
 
-// filterLocation.addEventListener("keyup", function (e) {
-//   result = search(e.target.value, "location", data);
-//   getData(result);
-//   console.log(result);
-// });
-
-// filterCheckbox.addEventListener("click", function (e) {
-//   if (e.target.checked) {
-//     result = search("Full Time", "workTime", data);
-//     getData(result);
-//   } else {
-//     getData(data);
-//   }
-// });
